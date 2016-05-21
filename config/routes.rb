@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+	get 'preferences/index'
+
   resources :artists do
     resources :songs, only: [:index, :show]
   end
